@@ -27,7 +27,7 @@ check.addEventListener("click", (e) => {
     // console.log(box);
     
     for(let i=0;i<box.length;i++){
-        box.checked=true
+        box[i].checked=true
     }
 
 }
@@ -40,7 +40,7 @@ Uncheck.addEventListener("click", (e) => {
     // console.log(box);
     
     for(let i=0;i<box.length;i++){
-        box.checked=false
+        box[i].checked=false
     }
 
 }
@@ -53,7 +53,7 @@ toggle.addEventListener("click", (e) => {
     // console.log(box);
     
     for(let i=0;i<box.length;i++){
-        box.checked=false
+        box[i].checked=!box[i].checked
     }
 
 }
