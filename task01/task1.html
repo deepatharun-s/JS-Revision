@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task-1 Find Largest & Smallest Word</title>
+    <link rel="stylesheet" href="task-style1.css">
 </head>
-<body>
-    <form>
-        <label>Enter Sentence : </label>
-        <textarea placeholder="Type here..." rows="3" cols="40" id="text"></textarea>
-        <input type="submit" id="btn">
-        <div id="error"></div>
-        <div id="result"></div>
-    </form>
 
-<script src="task1.js"></script>
+<body>
+
+    <div id="container">
+        <h1>Find Largest & Smallest Word</h1><br>
+        <form class="myform">
+            <label>Enter Sentence : </label><br>
+            <textarea placeholder="Type here..." rows="3" cols="40" id="text"></textarea>
+            <div class="Btn">
+                <input type="submit" id="subBtn">
+            </div>
+            <div id="errorDiv"></div>
+            <div id="resultDiv"></div>
+        </form>
+    </div>
+
+    <script src="task1.js"></script>
 </body>
+
 </html>

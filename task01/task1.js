@@ -15,13 +15,13 @@
 // Result: (shown here)
 
 
-const subBtn=document.getElementById("btn")
+const subBtn=document.getElementById("subBtn")
 
 const input=document.getElementById('text')
 
-const result=document.getElementById('result')
+const result=document.getElementById('resultDiv')
 
-const error=document.getElementById('error')
+const error=document.getElementById('errorDiv')
 
 
 subBtn.addEventListener('click',(e)=>{
@@ -30,6 +30,20 @@ subBtn.addEventListener('click',(e)=>{
     // console.log(input.value);
 
     const inputValue=input.value
+    if(/^$/.test(inputValue)){
+        error.innerText="Empty input not allowed"
+        return
+    }
+
+    if(/[0-9]/.test(inputValue)){
+        error.innerText="Numbers not allowed"
+        return
+    }
+
+    if(/[$&+,:;=?@#|'<>.-^*()%!]/.test(inputValue)){
+        error.innerText='Special characters not allowed'
+        return
+    }
 
     if(inputValue.length==0){
         result.innerText=''
