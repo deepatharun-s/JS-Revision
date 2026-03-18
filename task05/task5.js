@@ -27,8 +27,17 @@ btn.addEventListener("click",(e)=>{
     e.preventDefault()
 
     const inputValue=input.value 
+    error.innerText=''
+    result.innerText=''
 
-
+    if(/^$/.test(inputValue)){
+        error.innerText="Empty input not allowed"
+        return
+    }
+    if(/[a-zA-Z]/.test(inputValue)){
+        error.innerText="Alphabets not allowed"
+        return
+    }
 
     const arr=inputValue.split(',')
 

@@ -27,6 +27,21 @@ btn.addEventListener("click",(e)=>{
     e.preventDefault()
 
     const inputValue=input.value
+
+    if(/^$/.test(inputValue)){
+        error.innerText="Empty input not allowed"
+        return
+    }
+
+    if(/[0-9]/.test(inputValue)){
+        error.innerText="Numbers not allowed"
+        return
+    }
+
+    if(/[$&+,:;=?@#|'<>.-^*()%!]/.test(inputValue)){
+        error.innerText='Special characters not allowed'
+        return
+    }
     // console.log(inputValue);
     
 

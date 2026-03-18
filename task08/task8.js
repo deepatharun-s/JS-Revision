@@ -34,6 +34,16 @@ btn.addEventListener("click",(e)=>{
     const inputPositionValue=inputPosition.value-1
     const inputElementValue=inputElement.value
 
+    
+    error.innerText=''
+    result.innerText=''
+
+    if(inputArrayValue==''||inputElementValue==''){
+        error.innerText="Empty input not allowed"
+        return
+    }
+
+
     const arr=inputArrayValue.split(',')
 
     arr[inputPositionValue]=inputElementValue

@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task-10 </title>
+    <link rel="stylesheet" href="task-style1.css">
 </head>
 <body>
-    <form>
-        <div><label>First Name : <input type="text"></label></div>
-        <div><label>Last Name : <input type="text"></label></div>
-        <div><label>Email : <input type="email"></label></div>
-        <div><label>Phone : <input type="number"></label></div>
-        <div><label>Zipcode : <input type="number"></label></div>
-        <div><label>Address : <textarea placeholder="Address"></textarea></label></div>
+    <div id="container">
+    <form class="myform">
+        <div><label>First Name : <input class="input" type="text"></label></div>
+        <div><label>Last Name : <input class="input" type="text"></label></div>
+        <div><label>Email : <input class="input" type="email"></label></div>
+        <div><label>Phone : <input class="input" type="number"></label></div>
+        <div><label>Zipcode : <input class="input" type="number"></label></div>
+        <div><label>Address : <br><textarea class="input" placeholder="Address"></textarea></label></div>
         <div id="error"></div>
-        <div><button type="submit">Register</button></div>
-        
+        <div><button id="subBtn" type="submit">Register</button></div>
     </form>
+    </div>
 </body>
 </html>
