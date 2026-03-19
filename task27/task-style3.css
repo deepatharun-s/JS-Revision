@@ -1,0 +1,60 @@
+body{
+    display: flex;
+    min-height: 95vh;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(250, 248, 230);
+}
+#container{
+    /* border:1px solid black; */
+    border-radius: 10px;
+    padding: 40px;
+    background-color: #e7ced6;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+#errorDiv{
+    color: red;
+    font-size: 20px;
+}
+
+#subBtn{
+    padding: 10px;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    background-color: rgb(43, 122, 73);
+    color: white;
+    cursor:pointer;
+}
+#subBtn:hover{
+    background-color: rgb(33, 75, 49);
+}
+.Btn{
+    display: flex;
+    justify-content: center;
+}
+
+#myform{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#nameinput,#ageinput{
+    padding: 10px;
+    border: 1px solid rgb(196, 185, 185);
+    border-radius: 5px;
+}
+
+label{
+    font-size: 20px;
+}
+
+#resultDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+}
+
+table,thead,td{
+    border: 1px solid black;
+}
