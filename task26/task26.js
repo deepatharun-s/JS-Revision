@@ -19,7 +19,7 @@ const result = document.getElementById("resultDiv")
 input.addEventListener("input", (e) => {
     e.preventDefault()
 
-    const inputValue = input.value
+    const inputValue = input.value.trim()
     result.innerText = ''
 
     const arr = ['Apple', 'Banana', 'Grapes', 'JackFruit', 'Kiwi', 'Watermelon']

@@ -46,7 +46,7 @@ btn.addEventListener("click",(e)=>{
 
     error.innerText=''
 
-    const name=nameInput.value 
+    const name=nameInput.value.trim()
 
     const age=ageInput.value
 

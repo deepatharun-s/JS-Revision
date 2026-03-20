@@ -29,7 +29,7 @@ subBtn.addEventListener('click',(e)=>{
     
     // console.log(input.value);
 
-    const inputValue=input.value
+    const inputValue=input.value.trim()
     if(/^$/.test(inputValue)){
         error.innerText="Empty input not allowed"
         return

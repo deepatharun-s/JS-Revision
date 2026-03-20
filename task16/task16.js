@@ -27,7 +27,7 @@ const btn=document.getElementById('subBtn')
 btn.addEventListener("click",(e)=>{
     e.preventDefault()
 
-    const inputValue=input.value 
+    const inputValue=input.value.trim()
 
     error.innerText=''
     result.innerText=''

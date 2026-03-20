@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task-10 </title>
     <link rel="stylesheet" href="task-style1.css">
 </head>
+
 <body>
     <div id="container">
-    <form class="myform">
-        <div><label>First Name : <input class="input" type="text"></label></div>
-        <div><label>Last Name : <input class="input" type="text"></label></div>
-        <div><label>Email : <input class="input" type="email"></label></div>
-        <div><label>Phone : <input class="input" type="number"></label></div>
-        <div><label>Zipcode : <input class="input" type="number"></label></div>
-        <div><label>Address : <br><textarea class="input" placeholder="Address"></textarea></label></div>
-        <div id="error"></div>
-        <div><button id="subBtn" type="submit">Register</button></div>
-    </form>
+        <form class="myform">
+            <div><label>First Name : <input class="input" type="text" required="true"></label></div>
+            <div><label>Last Name : <input class="input" type="text" required="true"></label></div>
+            <div><label>Email : <input class="input" type="email" required="true"></label></div>
+            <div><label>Phone : <input class="input" type="number" required="true"></label></div>
+            <div id="zipcode"><label>Zipcode : <input class="input" type="number"></label></div>
+            <div id="address"><label>Address : <br><textarea class="input" placeholder="Address"></textarea></label></div>
+            <div id="error"></div>
+            <div><button id="subBtn" type="submit">Register</button></div>
+            <div id="resultDiv"></div>
+            <script src="task10.js"></script>
+        </form>
     </div>
 </body>
+
 </html>
