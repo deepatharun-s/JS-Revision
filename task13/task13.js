@@ -13,18 +13,42 @@
 // alert("Visits: 5"); 
 
 
-const input=document.getElementById('input')
-
-const error=document.getElementById("errorDiv")
-
-const result=document.getElementById("resultDiv")
-
-const btn=document.getElementById('subBtn')
+const btn = document.getElementById('subBtn')
 
 
-btn.addEventListener("click",(e)=>{
-    e.preventDefault()
+function cookieValue(name) {
 
-    document.cookie='visits'
+    let cookies = document.cookie.split(";")
+    console.log(cookies);
+    
+
+    for (let i = 0; i < cookies.length; i++) {
+
+        let c = cookies[i].trim()
+        console.log(c);
+        
+
+        if (c.indexOf(name + "=") === 0) {
+            return c.substring(name.length + 1)
+        }
+
+    }
+
+    return ""
+}
+
+btn.addEventListener('click', () => {
+
+    let count = cookieValue("visitCounter")
+
+    if (count === "") {
+        count = 1
+    } else {
+        count = Number(count) + 1
+    }
+
+    document.cookie = "visitCounter=" + count
+
+    alert("Visits : " + count)
 
 })

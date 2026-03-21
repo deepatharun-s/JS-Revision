@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task -38 Debounce Search Input</title>
+    <style>
+        body {
+            display: flex;
+            min-height: 95vh;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(161, 206, 198);
+        }
+
+        #container {
+            /* border:1px solid black; */
+            border-radius: 10px;
+            padding: 40px;
+            background-color: #be8aba;
+            box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+        }
+
+        #myform {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        #input {
+            padding: 10px;
+            border: 1px solid rgb(196, 185, 185);
+            border-radius: 5px;
+        }
+
+        label {
+            font-size: 20px;
+        }
+
+        #resultDiv {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <form id="myform">
+            <input id="input" type="text" placeholder="Search here...">
+            <div id="resultDiv"></div>
+        </form>
+    </div>
+
+    <script src="task38.js"></script>
+</body>
+
+</html>

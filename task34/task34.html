@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task -34 Kanban Board Drag & Drop</title>
+
+    <style>
+        #todoTask {
+            width: 250px;
+            height: 150px;
+            border: 1px solid black;
+            font-size: 25px;
+        }
+
+        #progressTask {
+            width: 250px;
+            height: 150px;
+            border: 1px solid black;
+            font-size: 25px;
+        }
+
+        #doneTask {
+            width: 250px;
+            height: 150px;
+            border: 1px solid black;
+            font-size: 25px;
+        }
+
+        body {
+            display: flex;
+            min-height: 95vh;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(161, 206, 198);
+        }
+
+        #container {
+            display: flex;
+            border-radius: 10px;
+            padding: 40px;
+            gap: 20px;
+            background-color: #f5b785;
+            box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+        }
+
+        label,.item {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="todoTask">TODO
+            <div class="item" id="item1" draggable="true">Item 1</div>
+            <div class="item" id="item2" draggable="true">Item 2</div>
+            <div class="item" id="item3" draggable="true">Item 3</div>
+        </div>
+        <div id="progressTask">IN PROGRESS</div>
+        <div id="doneTask">DONE</div>
+    </div>
+
+
+
+    <script src="task34.js"></script>
+
+</body>
+
+</html>

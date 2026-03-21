@@ -1,0 +1,11 @@
+li {
+    background-color: #f5b785;
+    padding: 38px;
+}
+
+body {
+    min-height: 95vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(161, 206, 198);
+}
