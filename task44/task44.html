@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task -44 Modal Popup (Basic)</title>
+
+    <style>
+        body {
+            display: flex;
+            min-height: 95vh;
+            align-items: center;
+            justify-content: center;
+            background: #cceeae;
+            background: radial-gradient(circle, rgba(204, 238, 174, 1) 0%, rgba(148, 187, 233, 1) 94%);
+        }
+
+        #overlay {
+            position: fixed;
+            display: none;
+            width: 50%;
+            height: 50%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 2;
+            color: lightseagreen;
+        }
+
+        #closeBtn {
+            left: 0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div id="overlay">
+        <button id="closeBtn">Close</button>
+        <h1>Welcome to Modal Popup</h1>
+        <h2>Hello,MitrahSoft</h2>
+    </div>
+    <button id="btn">Log IN</button>
+
+    <script src="task44.js"></script>
+</body>
+
+</html>

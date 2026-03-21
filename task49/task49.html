@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task -49 Pagination (Basic)</title>
+
+    <style>
+        body {
+            display: flex;
+            min-height: 95vh;
+            align-items: center;
+            justify-content: center;
+            background: #cceeae;
+            background: radial-gradient(circle, rgba(204, 238, 174, 1) 0%, rgba(148, 187, 233, 1) 94%);
+        }
+
+        #container {
+            border-radius: 10px;
+            padding: 50px;
+            background-color: #a08abe;
+            box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+        }
+
+        input {
+            width: 50px;
+            height: 30px;
+        }
+
+        #prevBtn,#nextBtn {
+            padding: 8px;
+            border: 1px solid whitesmoke;
+            border-radius: 10px;
+            background-color: rgb(43, 122, 73);
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1> Pagination (Basic) </h1>
+        <div id="resultDiv"></div>
+        <br>
+        <button id="prevBtn">Prev</button>
+        <button id="btn1">1</button>
+        <button id="btn2">2</button>
+        <button id="btn3">3</button>
+        <button id="btn4">4</button>
+        <button id="nextBtn">Next</button>
+    </div>
+    <script src="task49.js"></script>
+</body>
+
+</html>
