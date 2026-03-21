@@ -37,15 +37,21 @@
         }
 
         #container {
-            display: flex;
+
             border-radius: 10px;
             padding: 40px;
-            gap: 20px;
+            
             background-color: #f5b785;
             box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
         }
 
-        label,.item {
+        #board {
+            display: flex;
+            gap: 20px;
+        }
+
+        label,
+        .item {
             font-size: 20px;
         }
     </style>
@@ -53,13 +59,16 @@
 
 <body>
     <div id="container">
-        <div id="todoTask">TODO
-            <div class="item" id="item1" draggable="true">Item 1</div>
-            <div class="item" id="item2" draggable="true">Item 2</div>
-            <div class="item" id="item3" draggable="true">Item 3</div>
+        <h1>Kanban Board Drag & Drop</h1>
+        <div id="board">
+            <div id="todoTask">TODO
+                <div class="item" id="item1" draggable="true">Item 1</div>
+                <div class="item" id="item2" draggable="true">Item 2</div>
+                <div class="item" id="item3" draggable="true">Item 3</div>
+            </div>
+            <div id="progressTask">IN PROGRESS</div>
+            <div id="doneTask">DONE</div>
         </div>
-        <div id="progressTask">IN PROGRESS</div>
-        <div id="doneTask">DONE</div>
     </div>
 
 
