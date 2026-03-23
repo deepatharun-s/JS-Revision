@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task -58 Multi Step Form Wizard</title>
+
+    <style>
+        body {
+            display: flex;
+            min-height: 95vh;
+            align-items: center;
+            justify-content: center;
+            background: #cceeae;
+            background: radial-gradient(circle, rgba(204, 238, 174, 1) 0%, rgba(148, 187, 233, 1) 94%);
+        }
+
+        #container {
+            border-radius: 10px;
+            width: 350px;
+            height: 250px;
+            padding: 40px;
+            background-color: #8ea550;
+            box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+        }
+
+        button {
+            padding: 10px;
+            border: 1px solid whitesmoke;
+            border-radius: 10px;
+            background-color: rgb(43, 122, 73);
+            color: white;
+            cursor: pointer;
+        }
+
+        input {
+            padding: 10px;
+            border: 1px solid rgb(196, 185, 185);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1> Multi Step Form Wizard </h1>
+
+        <div id="step1">
+            Name: <input id="name" placeholder="Enter Name"><br><br>
+            <button onclick="next(1)">Next</button>
+        </div>
+
+        <div id="step2" style="display:none">
+            Address: <input id="address" placeholder="Enter Address"><br><br>
+            <button onclick="prev(2)">Back</button>
+            <button onclick="next(2)">Next</button>
+        </div>
+
+        <div id="step3" style="display:none">
+            Review Complete<br>
+            <button onclick="prev(3)">Back</button>
+        </div>
+    </div>
+
+
+    <script src="task58.js"></script>
+</body>
+
+</html>

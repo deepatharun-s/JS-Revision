@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task- 56 Search with Highlighted Matches</title>
+    <style>
+        body {
+            display: flex;
+            min-height: 95vh;
+            align-items: center;
+            justify-content: center;
+            background: #cceeae;
+            background: radial-gradient(circle, rgba(204, 238, 174, 1) 0%, rgba(148, 187, 233, 1) 94%);
+        }
+
+        #container {
+            border-radius: 10px;
+            width: 400px;
+            height: 200px;
+            padding: 40px;
+            background-color: #beb08a;
+            box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Search with Highlighted Matches</h1>
+        <input type="text" id="search" oninput="highlight()">
+
+        <p id="text">Learn React and JavaScript</p>
+    </div>
+    <script src="task56.js"></script>
+</body>
+
+</html>
